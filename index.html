@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Filters for images!">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
         <title>Image Filters</title>
@@ -13,7 +13,11 @@
             <span>Upload your image!</span>
             <input type="file" accept="image/*" name="image" id="fileInput">
             <canvas id="imageCanvas" width="1000" height="700"></canvas>
-            <input type="submit" onClick="myOnClickfn()"></input>
+        </div>
+        <div id="footer">
+            <a id="downloadLink" download="myImage.jpg" href="" onclick="downloadImage(this);">
+                Download your image!
+            </a>
         </div>
     </body>
 </html>
