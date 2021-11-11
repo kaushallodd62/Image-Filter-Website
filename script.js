@@ -1,10 +1,11 @@
 var fileInput = document.getElementById('fileInput');
-fileInput.addEventListener('change', handleImage, false);
+/* fileInput.addEventListener('change', handleImage, false);
 var canvas = document.getElementById('imageCanvas');
-var ctx = canvas.getContext('2d');
+var ctx = canvas.getContext('2d'); */
 var footer = document.getElementById('footer');
+var image = document.getElementById('output');
 
-function handleImage(e) {
+/* function handleImage(e) {
     var reader = new FileReader();
     reader.onload = function(event) {
         var img = new Image();
@@ -22,6 +23,11 @@ function handleImage(e) {
         img.src = event.target.result;
     }
     reader.readAsDataURL(e.target.files[0]);
+    footer.style.visibility = 'visible';
+} */
+
+function loadImage(event) {
+    image.src = URL.createObjectURL(event.target.files[0]);
     footer.style.visibility = 'visible';
 }
 
@@ -233,9 +239,3 @@ slider9.addEventListener("focus", function() {
 slider9.addEventListener("blur", function() {
     value9.style.visibility = "hidden";
 });
-
-// function for download link
-function downloadImage(el) {
-    var image = canvas.toDataURL("image/jpg");
-    el.href = image;
-}

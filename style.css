@@ -30,6 +30,11 @@ h1 {
     align-items: center;
 }
 
+#output {
+    width: 65%;
+    max-width: 800px;
+}
+
 /* canvas {
     max-width: 60%;
 } */
