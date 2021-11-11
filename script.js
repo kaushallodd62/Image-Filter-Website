@@ -15,7 +15,7 @@ function handleImage(e) {
             var hRatio = canvas.width/img.width;
             var vRatio = canvas.height/img.height;
             var ratio  = Math.min (hRatio, vRatio);
-            var xOffset = canvas.width/2-(img.width*ratio)/2
+            var xOffset = img.width*ratio < canvas.width ? canvas.width/2-(img.width*ratio)/2 : 0;
             ctx.drawImage(img, 0, 0, img.width, img.height, xOffset, 0, img.width*ratio, img.height*ratio);
         }
         img.src = event.target.result;
