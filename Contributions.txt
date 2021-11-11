@@ -1,0 +1,7 @@
+Saarang Rajguru (BT19CSE092): The proposal for the idea of the project was given by me and then approved by my teammate. I've contributed towards the creating the
+skeleton of the program and wrote the whole index.html file. The code for reading the image from the filesystem of the user and uploading it on our website was also done by me.
+I've also significantly given input to the UI of the whole website and managed the CSS properties regarding the UI.
+
+Kaushal Lodd (BT19CSE052): Ive takent up the job of writing most of the script.js file, where I code methods for filtering the image. Ive written code for various filter
+properties such as brightness, contrast, saturate, grayscale, invert, huerotate, blur, opacity, sepia and dropshadow. Ive also created sliders for the user to manipulate these
+propery values to suit their image filtering needs. Finally, I have even contributed to the UI of the sliders and the overall Project.
