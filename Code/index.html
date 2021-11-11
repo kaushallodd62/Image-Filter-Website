@@ -10,9 +10,11 @@
     <body>
         <h1>IMAGE FILTERS</h1>
         <div class="container">
-            <span>Upload your image!</span>
-            <input type="file" accept="image/*" name="image" id="fileInput">
-            <canvas id="imageCanvas" width="1000" height="700"></canvas>
+            <label for="fileInput" class="custom-file-input">
+                <span id="uploadText">Upload your image!</span>
+            </label>
+            <input type="file" accept="image/*" name="image" id="fileInput" onchange="loadImage(event)">
+            <img id="output" src="#">
         </div>
         <div id="controls">
             <div class="sliders">
@@ -62,12 +64,7 @@
                     <label for="slider9">sepia</label>
                 </div>
             </div>
-            <button id="resetAll">reset</button>
-        </div>
-        <div id="footer">
-            <a id="downloadLink" download="myImage.jpg" href="" onclick="downloadImage(this);">
-                Download your image!
-            </a>
+            <a id="resetAll" href="#">reset</a>
         </div>
     </body>
 </html>

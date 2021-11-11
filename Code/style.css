@@ -4,7 +4,24 @@
 
 * {
     box-sizing: border-box;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+}
+
+#uploadText {
+    font-family: 'Lato';
+    color: white;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#fileInput {
+    display: none;
+}
+
+.custom-file-input {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
 }
 
 html {
@@ -30,34 +47,44 @@ h1 {
     align-items: center;
 }
 
-/* canvas {
-    max-width: 60%;
-} */
+#output {
+    visibility: none;
+    width: 65%;
+    max-width: 800px;
+}
 
-#footer {
+#controls {
+    margin-top: 10px;
     visibility: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.25));
-    position: fixed;
-    width: fit-content;
-    left: 0;
-    right: 0;
-    bottom: 0.5em;
-    padding: 5px 1em 5px 1em;
-    border-radius: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    transition: 500ms ease;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
-#footer a {
-    border: none;
+.singleSlider {
     color: white;
-    text-decoration: none;
-    font-size: 1.5em;
     font-family: 'Lato';
+    border-bottom: 1px solid white;
 }
 
-#footer:hover {
+.singleSlider:first-child {
+    border-top: 1px solid white;
+}
+
+#resetAll {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 1em;
+    transition: 500ms ease;
+    border-radius: 5px;
+}
+
+#resetAll:hover {
     transform: scale(1.1);
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
 }
