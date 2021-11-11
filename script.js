@@ -65,7 +65,7 @@ const value9 = document.getElementById("sepia");
 
 //Update filters
 function updateFilters() {
-    ctx.filter = "brightness(" + brightness + "%) contrast(" + contrast + "%) saturate(" + saturate + "%) grayscale(" + grayscale + "%) invert(" + invert +
+    image.style.filter = "brightness(" + brightness + "%) contrast(" + contrast + "%) saturate(" + saturate + "%) grayscale(" + grayscale + "%) invert(" + invert +
     "%) hue-rotate(" + huerotate + "deg) blur(" + blur + "px) opacity(" + opacity + "%) sepia(" + sepia + "%)";
 }
 
