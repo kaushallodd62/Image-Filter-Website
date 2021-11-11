@@ -8,6 +8,8 @@ function handleImage(e) {
     reader.onload = function(event) {
         var img = new Image();
         img.onload = function() {
+
+            // calculate ratios to scale the images down to fit in the canvas
             var hRatio = canvas.width/img.width;
             var vRatio = canvas.height/img.height;
             var ratio  = Math.min (hRatio, vRatio);
@@ -18,7 +20,8 @@ function handleImage(e) {
     reader.readAsDataURL(e.target.files[0]);
 }
 
-downloadImage = function(el) {
+// function for download link
+function downloadImage(el) {
     var image = canvas.toDataURL("image/jpg");
     el.href = image;
 }
