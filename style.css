@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(25deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h1 {
+    font-family: Codystar;
+    color: white;
+    font-size: 6em;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 0 0 15px #fff;
+}
+
+#output {
+    width: 100px;
+}
