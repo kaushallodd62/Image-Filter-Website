@@ -10,7 +10,9 @@
     <body>
         <h1>IMAGE FILTERS</h1>
         <div class="container">
-            <span>Upload your image!</span>
+            <label for="fileInput" class="custom-file-input">
+                <span id="uploadText">Upload your image!</span>
+            </label>
             <input type="file" accept="image/*" name="image" id="fileInput" onchange="loadImage(event)">
             <img id="output" src="#">
         </div>
@@ -62,7 +64,7 @@
                     <label for="slider9">sepia</label>
                 </div>
             </div>
-            <button id="resetAll">reset</button>
+            <a id="resetAll" href="#">reset</a>
         </div>
     </body>
 </html>

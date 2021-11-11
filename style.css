@@ -4,7 +4,24 @@
 
 * {
     box-sizing: border-box;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+}
+
+#uploadText {
+    font-family: 'Lato';
+    color: white;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#fileInput {
+    display: none;
+}
+
+.custom-file-input {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
 }
 
 html {
@@ -31,13 +48,43 @@ h1 {
 }
 
 #output {
+    visibility: none;
     width: 65%;
     max-width: 800px;
 }
 
 #controls {
+    margin-top: 10px;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+}
+
+.singleSlider {
+    color: white;
+    font-family: 'Lato';
+    border-bottom: 1px solid white;
+}
+
+.singleSlider:first-child {
+    border-top: 1px solid white;
+}
+
+#resetAll {
+    font-family: 'Lato';
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 1em;
+    transition: 500ms ease;
+    border-radius: 5px;
+}
+
+#resetAll:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
 }
