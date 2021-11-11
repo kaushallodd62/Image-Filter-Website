@@ -25,16 +25,16 @@ function handleImage(e) {
     footer.style.visibility = 'visible';
 }
 
-let brightness = 100;
-let contrast = 100;
-let saturate = 100;
-let grayscale = 0;
-let invert = 0;
-let huerotate = 0;
-let blur = 0;
-let opacity = 100;
-let sepia = 0;
-let dropshadow = 0;
+var brightness = 100;
+var contrast = 100;
+var saturate = 100;
+var grayscale = 0;
+var invert = 0;
+var huerotate = 0;
+var blur = 0;
+var opacity = 100;
+var sepia = 0;
+var dropshadow = 0;
 
 const resetAll = document.getElementById("resetAll");
  
@@ -59,7 +59,7 @@ const value9 = document.getElementById("sepia");
 
 //Update filters
 function updateFilters() {
-    fileInput.style.filter = "brightness(" + brightness + "%) contrast(" + contrast + "%) saturate(" + saturate + "%) grayscale(" + grayscale + "%) invert(" + invert +
+    ctx.filter = "brightness(" + brightness + "%) contrast(" + contrast + "%) saturate(" + saturate + "%) grayscale(" + grayscale + "%) invert(" + invert +
     "%) hue-rotate(" + huerotate + "deg) blur(" + blur + "px) opacity(" + opacity + "%) sepia(" + sepia + "%)";
 }
 
