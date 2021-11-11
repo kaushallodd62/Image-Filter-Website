@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    border: 1px solid white;
 }
 
 html {
@@ -22,4 +23,13 @@ h1 {
 
 #output {
     width: 100px;
+}
+
+#fileInput {
+    display: block;
+    margin: 0 auto;
+}
+
+canvas {
+    display: block;
 }
