@@ -12,7 +12,7 @@ This web-based Photo Filter allows us to apply multiple CSS filters on images wh
 Using one or more newer CSS properties (background-blend-mode, mix-blend-mode, or filter) gives us a surprising amount of possibilities to manipulate a single source image.
 The unedited background-image is also manipulated using CSS.
 
-These effects should be used as a progressive enhancement. By default, the source image is displayed without any effects. The sliders can be moved to achieve filltering on various properties like brightness, contrast, saturate, grayscale, invert, huerotate, blur, opacity, sepia and dropshadow.
+These effects should be used as a progressive enhancement. By default, the source image is displayed without any effects. The sliders can be moved to achieve filtering on various properties like brightness, contrast, saturate, grayscale, invert, hue, rotate, blur, opacity, sepia and drop-shadow.
 
 ## Usage
 
